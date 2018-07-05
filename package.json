@@ -29,7 +29,7 @@
     "validate-config": "tsc -p ./config",
     "verify": "npm run validate-config && npm run style && npm run test:ci",
     "commit": "git-cz",
-    "style": "npm run format -- --list-different && npm run lint",
+    "style": "npm run lint",
     "style:fix": "npm run format:fix && npm run lint:fix",
     "format": "prettier --config config/prettier.config.js \"**/*.{ts,tsx,js,jsx,css,scss,sass,less,md}\"",
     "format:fix": "npm run format -- --write",
