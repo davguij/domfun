@@ -1,10 +1,5 @@
 function domfun(selector: string) {
-  const el = document.querySelector(selector)
-  function echo() {
-    return el
-  }
-
-  return { echo }
+  return Array.from(document.querySelectorAll(selector))
 }
 
 export { domfun as df }
